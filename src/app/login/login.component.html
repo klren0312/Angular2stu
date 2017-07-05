@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+        <div class="login-form-container">
+            <img src="assets/imgs/u27.png" alt="logo" class="login-logo">
+            <div class="login-content">
+                <h3 class="center-block sys-title">众家云家电行业服务平台</h3>
+                <form #form="ngForm" (ngSubmit)="form.form.valid" novalidate class="form-horizontal" role="form">
+                    <div class="form-group" [ngClass]="{ 'has-error': form.submitted && !userName.valid }">
+                        <!--<label class="col-sm-2 control-label">用户名：</label>-->
+                        <div class="col-sm-12">
+                            <img src="assets/imgs/user.png" class="col-sm-5 login-img" alt="login-user">
+                            <input required name="userName" [(ngModel)]="user.userName" #userName="ngModel" type="text" class="login-input col-sm-7" placeholder="账户">
+                            <div *ngIf="form.submitted && !userName.valid" class="text-danger">用户名必须输入！</div>
+                        </div>
+                    </div>
+                    <div class="form-group" [ngClass]="{ 'has-error': form.submitted && !password.valid }">
+                        <!--<label class="col-sm-2 control-label">密码：</label>-->
+                        <div class="col-sm-12">
+                            <img src="assets/imgs/pwd.png" class="col-sm-5 login-img" alt="login-user">
+                            <input required minlength="8" [(ngModel)]="user.password" name="password" #password="ngModel" type="password" class="login-input col-sm-7" placeholder="密码">
+                            <div *ngIf="form.submitted && !password.valid" class="text-danger">密码必须输入,至少要8位！</div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <button type="submit" class=" login-btn " (click)="login()">登录</button>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="checkbox col-sm-8">
+                            <label>
+                                    <input name="remeberMe" type="checkbox" [(ngModel)]="user.remeberMe" #remeberMe="ngModel">记住账户
+                                </label>
+                        </div>
+                        <a class="col-sm-4 login-forget" (click)="forgetPwd()">忘记密码？</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
