@@ -60,7 +60,8 @@
             "../node_modules/jquery/dist/jquery.js",
             "../node_modules/jquery-ui-dist/jquery-ui.js",
             "../node_modules/bootstrap/dist/js/bootstrap.js",
-            "../node_modules/datatables.net/js/jquery.dataTables.js"
+            "../node_modules/datatables.net/js/jquery.dataTables.js",
+            "assets/china.js"
         ],
         "environmentSource": "environments/environment.ts",
         "environments": {
