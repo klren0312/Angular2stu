@@ -1,0 +1,127 @@
+<div>
+    <span class="fa fa-home"></span>
+    <span>首页</span>
+</div>
+<div class="headerdiv">
+    <h2 class="maininfo">统计概况</h2>
+</div>
+<!--设备分析折线图-->
+<div class="row">
+    <div class="col-sm-7">
+        <div class="col-sm-6 chartdiv1">
+            <p class="chartheader">设备分析</p>
+            <hr>
+            <div class="col-sm-8">
+                <echart [chartType]="lineChart1" class="linechart1"></echart>
+            </div>
+            <!--右侧数字统计显示-->
+            <div class="col-sm-4 infodiv">
+                <div class="col-sm-12">
+                    <div class="col-sm-9">
+                        <p>新接入设备（昨日）</p>
+                        <h1>1308</h1>
+                        <p>活跃设备（昨日）</p>
+                        <h1>4589</h1>
+                        <p>总接入设备</p>
+                        <h1>29832</h1>
+                    </div>
+                    <!--增减幅度显示-->
+                    <div class="col-sm-3">
+                        <div class="upinfo upinfo1">
+                            <span class="fa fa-sort-asc"></span>
+                            <span>3.90%</span>
+                        </div>
+                        <div class="upinfo upinfo2">
+                            <span class="fa fa-sort-asc"></span>
+                            <span>3.90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--用户分析-->
+        <div class="col-sm-6  chartdiv3">
+            <p class="chartheader">用户分析</p>
+            <hr>
+            <div class="col-sm-8">
+                <echart [chartType]="lineChart2" class="linechart2"></echart>
+            </div>
+            <!--右侧数字显示-->
+            <div class="col-sm-4 infodiv">
+                <div class="col-sm-12">
+                    <div class="col-sm-9">
+                        <p>新用户（昨日）</p>
+                        <h1>1460</h1>
+                        <p>活跃用户（昨日）</p>
+                        <h1>2600</h1>
+                        <p>总注册用户</p>
+                        <h1>25683</h1>
+                    </div>
+                    <!--增减幅度显示-->
+                    <div class="col-sm-3">
+                        <div class="downinfo upinfo3">
+                            <span class="fa fa-sort-desc"></span>
+                            <span>3.90%</span>
+                        </div>
+                        <div class="upinfo upinfo4">
+                            <span class="fa fa-sort-asc"></span>
+                            <span>3.90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--信息上报-->
+        <div class="col-md-6 chartdiv4">
+            <p class="chartheader">信息上报</p>
+            <hr>
+            <!-- 表格 -->
+            <table width="100%" class="table table-striped">
+                <tr>
+                    <td width="500"> <span class="fa fa-share-alt"></span>广东广州 用户13567567897 分享了 <a href="#">智能电视机  Platform-A701 </a>授权</td>
+                    <td>2017-06-28 18:00</td>
+                </tr>
+                <tr>
+                    <td width="500"> <span class="fa fa-share-alt"></span>广东广州 用户13500299903 <a href="#">智能安防  Platform-BD002-92 </a>授权</td>
+                    <td>2017-06-28 18:00</td>
+                </tr>
+                <tr>
+                    <td width="500"> <span class="fa fa-link"></span>广东广州 用户13492384993 扫码绑定了 <a href="#">智能洗衣机  Platform-CTU-09 </a></td>
+                    <td>2017-06-28 18:00</td>
+                </tr>
+                <tr>
+                    <td width="500"> <span class="fa fa-exclamation-triangle"></span> 广东广州 <a href="#">智能电视机  Platform-A705  </a> 上报了故障 <span class="info-error">电路故障</span> </td>
+                    <td>2017-06-28 18:00</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <!--全国设备覆盖情况图-->
+    <div class="col-sm-5">
+
+        <div class="col-sm-12 chartdiv2">
+            <p class="chartheader">全国设备覆盖情况</p>
+            <hr>
+            <echart [chartType]="mapChart" class="mapchart"></echart>
+        </div>
+
+        <div class="col-sm-12 chartdiv5">
+            <p class="chartheader">接入设备类目占比</p>
+            <hr>
+            <echart [chartType]="pieChart" class="piechart"></echart>
+        </div>
+
+        <div class="col-sm-12 chartdiv6">
+            <p class="chartheader">用户分享占比</p>
+            <hr>
+            <echart [chartType]="barChart" class="barchart"></echart>
+        </div>
+    </div>
+
+
+
+</div>
