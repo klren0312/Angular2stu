@@ -34,6 +34,7 @@
 
 .chartdiv1 .infodiv {
     border-left: 2px solid rgba(228, 228, 228, 1);
+    margin-top: -16px;
 }
 
 .upinfo {
@@ -76,6 +77,10 @@
     color: #000;
 }
 
+.chartdiv3 .infodiv {
+    border-left: 2px solid rgba(228, 228, 228, 1);
+}
+
 .upinfo3 {
     position: relative;
     top: 40px;
@@ -102,18 +107,19 @@
     color: red;
 }
 
-// 地图
+// 全国设备覆盖情况图
 .chartdiv2 {
     padding-top: 15px;
-    width: 100%;
+    width: 400px;
     height: 400px;
     background: #fff;
     border: 1px solid rgba(228, 228, 228, 1);
 }
 
 .mapchart {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
+    margin-top: -84px;
     float: left;
 }
 

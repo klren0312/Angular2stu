@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'main-page-monitor',
   templateUrl: './main-page-monitor.component.html',
@@ -81,8 +82,9 @@ export class MainPageMonitorComponent implements OnInit {
 
   //全国设备覆盖情况
   mapChart = {
+	  	color: [''],
         title: {
-		        text: '全国覆盖情况',
+		        text: '',
 		        left: 'center'
 		    },
 		    tooltip: {
@@ -103,12 +105,12 @@ export class MainPageMonitorComponent implements OnInit {
 		            mapType: 'china',
 		            roam: false,
 		            label: {
-		                normal: {
-		                    show: true
-		                },
-		                emphasis: {
-		                    show: true
-		                }
+		                // normal: {
+		                //     show: true
+		                // },
+		                // emphasis: {
+		                //     show: true
+		                // }
 		            },
 		            data:[
 		                {name: '北京',value: 2693 },
@@ -121,15 +123,15 @@ export class MainPageMonitorComponent implements OnInit {
 		                {name: '辽宁',value: 1000 },
 		                {name: '黑龙江',value: 1000 },
 		                {name: '湖南',value: 1000 },
-		                {name: '安徽',value: 1000 },
+		                {name: '安徽',value: 1600 },
 		                {name: '山东',value: 1000 },
-		                {name: '新疆',value: 1000 },
-		                {name: '江苏',value: 1000 },
+		                {name: '新疆',value: 100 },
+		                {name: '江苏',value: 1500 },
 		                {name: '浙江',value: 2930 },
 		                {name: '江西',value: 1000 },
 		                {name: '湖北',value: 1000 },
 		                {name: '广西',value: 1000 },
-		                {name: '甘肃',value: 1000 },
+		                {name: '甘肃',value: 10 },
 		                {name: '山西',value: 1000 },
 		                {name: '内蒙古',value: 1000 },
 		                {name: '陕西',value: 1000 },
@@ -137,10 +139,10 @@ export class MainPageMonitorComponent implements OnInit {
 		                {name: '福建',value: 1000 },
 		                {name: '贵州',value: 1000 },
 		                {name: '广东',value: 1806 },
-		                {name: '青海',value: 1000 },
-		                {name: '西藏',value: 1000 },
+		                {name: '青海',value: 10 },
+		                {name: '西藏',value: 10 },
 		                {name: '四川',value: 1000 },
-		                {name: '宁夏',value: 1000 },
+		                {name: '宁夏',value: 10 },
 		                {name: '海南',value: 1000 },
 		                {name: '台湾',value: 1000 },
 		                {name: '香港',value: 1000 },
