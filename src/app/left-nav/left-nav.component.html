@@ -1,7 +1,7 @@
 <div class="left_col scroll-view">
     <div class="navbar nav_title" style="border: 0;">
-        <!--点击顶端菜单的隐藏按钮时，图片无法缩进去-->
-        <img src="assets/imgs/u380.png" alt="logo" class="left-logo">
+        <!--点击顶端菜单的隐藏按钮时，图片无法缩进去,通过修改这个样式暂时解决.nav-md .container.body .col-md-3.left_col -->
+        <img src="assets/imgs/u380.png" alt="logo" class=" left-logo">
         <h2 class="left-header">众家云家电行业服务平台</h2>
     </div>
     <div class="clearfix"></div>
@@ -12,8 +12,8 @@
             <img src="assets/imgs/img.jpg" alt="..." class="hiddenthings img-circle profile_img">
         </div>
         <div class="profile_info ">
-            <span class="hiddenthings">你好，</span>
-            <h2 class="hiddenthings">大漠穷秋</h2>
+            <span class="hiddenthings">。。。。</span>
+            <h2 class="hiddenthings">。。。。</h2>
         </div>
     </div>
     <!--没法解决 暂时隐藏 end-->
@@ -24,7 +24,7 @@
     <div id="sidebar-menu" class="col-md-12 main_menu_side hidden-print main_menu ">
         <div class="menu_section">
             <ul class="nav side-menu">
-                <li><a><i class="fa fa-home"></i> 首页 </a>
+                <li><a routerLink="sys/sysmonitor"><i class="fa fa-home"></i> 首页 </a>
                     <!--<ul class="nav child_menu">
                         <li><a routerLink="org/orgmng">组织架构</a></li>
                         <li><a routerLink="user/usertable/page/1">用户列表</a></li>
